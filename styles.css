@@ -26,6 +26,10 @@ header {
     z-index: 1000;
 }
 
+.logo img {
+    height: 50px;
+}
+
 /* Hero Section */
 .hero {
     background: url('images/hero.jpg') no-repeat center center/cover;
