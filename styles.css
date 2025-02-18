@@ -6,10 +6,18 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Nagłówek */
-/* Nagłówek – menu identyczne jak na ABRE Development */
+/* Pasek kontaktowy na górze */
+.top-bar {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* MENU GŁÓWNE */
 header {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(255, 255, 255, 0.9);
     position: fixed;
     width: 100%;
     padding: 15px 50px;
@@ -17,7 +25,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    transition: background 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
 }
 
 header .container {
@@ -29,25 +37,20 @@ header .container {
 
 /* Logo */
 .logo img {
-    height: 60px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.logo img:hover {
-    transform: scale(1.1);
+    height: 50px;
 }
 
 /* Nawigacja */
 nav {
     flex-grow: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 40px;
 }
 
 .nav-links li {
@@ -56,9 +59,9 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: 400;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
     text-transform: uppercase;
     transition: color 0.3s ease-in-out;
 }
@@ -71,7 +74,7 @@ nav {
 .menu-toggle {
     display: none;
     font-size: 28px;
-    color: white;
+    color: black;
     cursor: pointer;
 }
 
@@ -83,7 +86,7 @@ nav {
         position: absolute;
         top: 70px;
         right: 0;
-        background: rgba(0, 0, 0, 0.9);
+        background: rgba(255, 255, 255, 0.95);
         width: 100%;
         text-align: center;
         padding: 20px 0;
@@ -101,80 +104,4 @@ nav {
     .nav-links.active {
         display: flex;
     }
-}
-
-
-/* Hero Section */
-.hero {
-    background: url('images/hero.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-}
-
-.hero h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.hero p {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-}
-
-.hero .btn {
-    background: white;
-    color: black;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.hero .btn:hover {
-    background: gray;
-}
-
-/* SEKCJE */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 30px;
-    padding: 50px;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* SEKCJA KONTAKTU */
-#contact {
-    text-align: center;
-    padding: 50px;
-}
-
-button {
-    background: black;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background: gray;
 }
